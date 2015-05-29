@@ -1,0 +1,19 @@
+.excerpt {
+    width: 30%;
+    float: left;
+    margin-right: 2%;
+    height: 94px;
+    overflow: hidden;
+    position: relative;
+}
+
+.excerpt:after {
+    display: block;
+    content: '...';
+    width: 1em;
+    height: 1.5em;
+    background: #fff;
+    position: absolute;
+    bottom: -6px;
+    right: 0;
+}
