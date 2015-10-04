@@ -1,0 +1,37 @@
+/-------- html -------------/
+<p class="clamped clamped-2">
+    <span class="text">
+        But more text here (the same markup structure though): if the text overflows from the clamped paragraph's height, the ellipse will show.
+        <span class="ellipsis">
+            &#133;
+        </span>
+        <span class="fill"></span>
+    </span>
+</p>
+
+/-------- css -------------/
+
+.clamped {
+    line-height: 1.5;
+    overflow: hidden;
+    position: relative;
+}
+
+.clamped-2 {
+    /* Clamp to 2 lines, ie line-height x 2: */
+    max-height: 1.5em;
+}
+
+.ellipsis {
+    background: #fff;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+
+.fill {
+    background: #fff; 
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
